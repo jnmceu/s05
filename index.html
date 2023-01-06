@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Introduction and Selectors</title>
+	<!-- 
+		Internal styling allows 
+	 -->
+	<!-- Best Practice:external styling or external css -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+	<!-- Inline Style
+			Inline styling is done when we add a style attribute to our tag. This will allow us to change the styles of an element. The values before the colon(:) are the style properties of an element that we want to change and the value after the colon are the values we would like to assign to a property
+
+			<tag style="property:value; property:value;">
+	 -->
+	<!-- navbar -->
+		<!-- semantics refers to the meaning of a piece of code 
+			ex. header
+				nav
+				section
+				article
+				aside
+				footer
+			nav element defines a set of navigation links
+		-->
+		<nav id="top">
+			<a href="#landing">Centro Escolar</a>
+			<div>
+				<a href="#landing">Landing</a>
+				<a href="#register">Register</a>
+			</div>
+		</nav>
+
+	<!-- end of navbar -->
+
+	<h1>Hello World!</h1>
+	<!-- landing page -->
+	<section id="landing">
+		<!-- section element defines section in document -->
+		<!-- ids are the unique identifiers of an element -->
+		<h2>Welcome to Centro Escolar University!</h2>
+		<h3 id="ceu-motto">Ciencia y Virtud</h3>
+
+		<!-- image of scary puppy lol -->
+		<img src="https://place-puppy.com/500x500" alt="imagePuppy">
+
+		<ol id="ceu-learning-list">
+			<li class="offering-item">Day Classes</li>
+			<li class="offering-item">Night Classes</li>
+			<li class="offering-item">Hybrid Classes</li>
+		</ol>
+
+		<a href="#top">Back to Top</a>
+	</section>
+	<!-- end of landing page -->
+
+	<!-- register page -->
+	<section id="register">
+		<h2>Register</h2>
+		<form>
+			<label for="first-name">First Name:</label>
+			<input id="first-name" type="text" required autocomplete>
+
+			<label for="last-name">Last Name:</label>
+			<input id="last-name" type="text" required autocomplete>
+
+			<label for="email">Email:</label>
+			<input id="email" type="text" required autocomplete>
+
+			<button type="submit">Enroll Now!</button>
+		</form>
+		<a href="#top">Back to Top</a>
+	</section>
+	<!-- end of register page -->
+
+	<!-- footer -->
+	<!-- end of footer -->
+	
+</body>
+</html>
